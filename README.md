@@ -11,3 +11,5 @@ Homework 2 instructions: http://cs1331.gatech.edu/fall2017/hw2/hw2-chess-classes
 Homework 3 instructions: http://cs1331.gatech.edu/fall2017/hw3/hw3-exceptions.html
 
 Homework 4 instructions: http://cs1331.gatech.edu/fall2017/hw4/hw4-square-set.html
+
+Homework 5 instructions: http://cs1331.gatech.edu/fall2017/hw5/hw5-chess-game.html
