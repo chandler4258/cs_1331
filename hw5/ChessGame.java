@@ -67,20 +67,19 @@ public class ChessGame {
     * @return the list of moves that use a piece with the same type as p
     */
     public List<Move> getMovesWithPiece(Piece p) {
-
-        class PiecePredicate implements Predicate<Move> {
-            private Class c;
-            public PiecePredicate(Piece p) {
-                c = p.getClass();
-            }
-            public boolean test(Move m) {
-                return (m.getWhitePly().getPiece().getClass().equals(c))
-                    || (m.getBlackPly().getPiece().getClass().equals(c));
-            }
-        }
         PiecePredicate pred = new PiecePredicate(p);
         return this.filter(pred);
     }
+    private class PiecePredicate implements Predicate<Move> {
+        private Class c;
+        public PiecePredicate(Piece p) {
+            c = p.getClass();
+        }
+        public boolean test(Move m) {
+            return (m.getWhitePly().getPiece().getClass().equals(c))
+                || (m.getBlackPly().getPiece().getClass().equals(c));
+        }
+    };
 
 
 }
